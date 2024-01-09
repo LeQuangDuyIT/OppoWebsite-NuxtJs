@@ -1,6 +1,4 @@
 <script>
-import { defineProps } from 'vue';
-
 export default {
   props: {
     children: {
@@ -11,7 +9,7 @@ export default {
 };
 </script>
 <template>
-  <button class="bg-black text-white px-4 py-2 rounded-full">
+  <button class="bg-black hover:bg-black/70 duration-300 text-white px-4 py-2 rounded-full">
     <slot></slot>
   </button>
 </template>

@@ -14,9 +14,7 @@ export default {
 </script>
 
 <template>
-  <div
-    class="ct-background w-full bg-cover bg-center"
-  >
+  <div class="ct-background w-full bg-cover bg-center">
     <Container>
       <div class="h-[640px] flex flex-col justify-between items-start py-16 font-bold">
         <div class="flex flex-col gap-2">
@@ -34,5 +32,3 @@ export default {
   background-image: url('~/assets/images/reno11-5120-1280.jpg');
 }
 </style>
-
-<!-- :style="{ 'background-image': url('~/assets/images/reno11-5120-1280.jpg') }" -->
