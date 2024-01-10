@@ -1,4 +1,6 @@
 <script>
+import Background from 'assets/images/reno11-5120-1280.jpg';
+
 export default {
   props: {
     name: {
@@ -9,12 +11,17 @@ export default {
       type: String,
       default: ''
     }
+  },
+  data() {
+    return {
+      backgroundImage: { backgroundImage: `url(${Background})` }
+    };
   }
 };
 </script>
 
 <template>
-  <div class="ct-background w-full bg-cover bg-center">
+  <div class="w-full bg-cover bg-center" :style="backgroundImage">
     <Container>
       <div class="h-[640px] flex flex-col justify-between items-start py-16 font-bold">
         <div class="flex flex-col gap-2">
@@ -26,9 +33,3 @@ export default {
     </Container>
   </div>
 </template>
-
-<style scoped>
-.ct-background {
-  background-image: url('~/assets/images/reno11-5120-1280.jpg');
-}
-</style>
